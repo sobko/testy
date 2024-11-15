@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+        <link href="styles.css" rel="stylesheet">
+        <title>Fun Facts</title>
+    </head>
+    <script>
+         document.addEventListener('DOMContentLoaded', function() {
+        $(function(){
+    
+   
+    $('.list-group li').click(function(e) {
+        e.preventDefault()
+        
+        $that = $(this);
+        
+        $('.list-group').find('li').removeClass('active');
+        $that.addClass('active');
+        if(this.id === "f1")
+        {
+         document.getElementById('funfacttd').innerHTML="Mallards are the most common duck in the world";
+         //https://www.fws.gov/refuge/Tallahatchie/wildlife_and_habitat/mallard.html
+         document.getElementById('duckid').src="mallard.png";
+         //https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.allaboutbirds.org%2Fguide%2FMallard%2Fid&psig=AOvVaw0Jdv6e-EqtAjqCkThk8Mej&ust=1637885705983000&source=images&cd=vfe&ved=0CAsQjRxqFwoTCKjtrr-esvQCFQAAAAAdAAAAABAD
+        }else if(this.id === "f2")
+        {
+         document.getElementById('funfacttd').innerHTML="Duck feathers are extremely water proof";
+         //https://www.four-paws.org/campaigns-topics/topics/farm-animals/10-facts-about-ducks
+         document.getElementById('duckid').src="feather.png";
+         //https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.fresheggsdaily.blog%2F2016%2F02%2Ftreating-and-preventing-wet-feather-in.html&psig=AOvVaw1UPU691dvSHyiS8VpSWV72&ust=1637889634080000&source=images&cd=vfe&ved=0CAsQjRxqFwoTCKCqtIm1svQCFQAAAAAdAAAAABAF
+        }
+        else if(this.id === "f3")
+        {
+         document.getElementById('funfacttd').innerHTML="Ducks are omnivores. They eat things like grass, aquatic plants, insects, seeds, fruit, fish, crustaceans, etc.";
+        //https://www.four-paws.org/campaigns-topics/topics/farm-animals/10-facts-about-ducks
+        document.getElementById('duckid').src="duckdiet.png";
+        //https://www.google.com/url?sa=i&url=https%3A%2F%2Ffeedingnature.com%2Fwhat-do-ducks-eat%2F&psig=AOvVaw2G0e_sB4C7Ncp31AS1fmi5&ust=1637889735869000&source=images&cd=vfe&ved=0CAsQjRxqFwoTCOC98PassvQCFQAAAAAdAAAAABAU
+        }
+        else if(this.id === "f4")
+        {
+         document.getElementById('funfacttd').innerHTML="Most ducks don't mate for life, but they are normally monogamous for a breeding season";
+         //https://www.four-paws.org/campaigns-topics/topics/farm-animals/10-facts-about-ducks
+         document.getElementById('duckid').src="duckmate.png";
+         //https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.shutterbug.com%2Fcontent%2Flove-ducks&psig=AOvVaw33xBsAc12fsvijK6C6qvxW&ust=1637889835726000&source=images&cd=vfe&ved=0CAsQjRxqFwoTCOj0hJy1svQCFQAAAAAdAAAAABAO
+        }
+        else if(this.id === "f5")
+        {
+         document.getElementById('funfacttd').innerHTML="Ducks like to stay in large groups to feel safer";
+         //https://www.four-paws.org/campaigns-topics/topics/farm-animals/10-facts-about-ducks
+         document.getElementById('duckid').src="duckacpocalypse.png";
+         //https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.deviantart.com%2Farchlover%2Fart%2FDuck-Invasion-65201432&psig=AOvVaw0jkfvx0O3Q7T3BwDJz4ZmH&ust=1637863030862000&source=images&cd=vfe&ved=0CAsQjRxqFwoTCJjlyK-1svQCFQAAAAAdAAAAABAM
+        }
+        else if(this.id === "f6")
+        {
+         document.getElementById('funfacttd').innerHTML="Ducks can live up to 20 years if well taken care of";
+         //https://www.four-paws.org/campaigns-topics/topics/farm-animals/10-facts-about-ducks
+         document.getElementById('duckid').src="oldduck.png";
+         //https://www.google.com/url?sa=i&url=https%3A%2F%2Fdrawception.com%2Fgame%2F87htbgFCf4%2Fold-duck-is-old%2F&psig=AOvVaw2bfSnYYPUBNWM27pG9Yd1q&ust=1637890029618000&source=images&cd=vfe&ved=0CAsQjRxqFwoTCMDIjaS1svQCFQAAAAAdAAAAABAO
+        }
+        else if(this.id === "f7")
+        {
+         document.getElementById('funfacttd').innerHTML="Duck egg production is sped up by daylight";
+         // https://www.four-paws.org/campaigns-topics/topics/farm-animals/10-facts-about-ducks
+         document.getElementById('duckid').src="duckegg.png";
+         //https://www.google.com/url?sa=i&url=https%3A%2F%2Fediblewesternny.ediblecommunities.com%2Feat%2Fduck-egg-decadence&psig=AOvVaw0U1kOZczALJpkHncW3XwRp&ust=1637890114950000&source=images&cd=vfe&ved=0CAsQjRxqFwoTCPC2mby1svQCFQAAAAAdAAAAABAO
+        }
+        else if(this.id === "f8")
+        {
+         document.getElementById('funfacttd').innerHTML="Ducks have been domesticated for over 500 years";
+         // https://www.four-paws.org/campaigns-topics/topics/farm-animals/10-facts-about-ducks
+         document.getElementById('duckid').src="ultraduck.png";
+         //https://www.google.com/url?sa=i&url=https%3A%2F%2Fonwardstate.com%2F2021%2F05%2F04%2Fwholesome-penn-state-students-save-baby-ducks%2F&psig=AOvVaw1-yPGSw2V0mwVjdAOqoBOW&ust=1637863029795000&source=images&cd=vfe&ved=0CAsQjRxqFwoTCICNjtOzsvQCFQAAAAAdAAAAABAK
+        }
+        else if(this.id === "f9")
+        {
+         document.getElementById('funfacttd').innerHTML="Male ducks are also known as drakes";
+         //http://justfunfacts.com/interesting-facts-about-ducks/
+         document.getElementById('duckid').src="drakeduck.png";
+         //https://www.google.com/url?sa=i&url=https%3A%2F%2Fin.pinterest.com%2Fpin%2F330240585176914564%2F&psig=AOvVaw23RD01QPHsr25h2WfYi2hl&ust=1637892236242000&source=images&cd=vfe&ved=0CAsQjRxqFwoTCOCRhp-2svQCFQAAAAAdAAAAABAN
+         }
+        else if(this.id === "f10")
+        {
+         document.getElementById('funfacttd').innerHTML="There are no nerves or blood vessels in duck feet, so their feet can't feel the cold";
+         //http://justfunfacts.com/interesting-facts-about-ducks/
+         document.getElementById('duckid').src="duckfeet.png";
+         //https://www.google.com/url?sa=i&url=https%3A%2F%2Ffineartamerica.com%2Ffeatured%2Fduck-feet-robin-keefe.html&psig=AOvVaw1wtrZMvXlxOK5wID2T3i0U&ust=1637890239358000&source=images&cd=vfe&ved=0CAsQjRxqFwoTCKi9sNK1svQCFQAAAAAdAAAAABAO
+        }
+         
+    });
+    });
+    
+});
+        
+    </script>
+    <body>
+         <div class="container">
+            <div class="row">
+                <div class ="col">
+                    <nav class="navbar navbar-expand-lg navbar-light navigation">
+  <a class="navbar-brand title" href="index.html">Duckopedia</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav">
+      
+      <li class="nav-item">
+        <a class="nav-link" href="index.html">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="funfacts.html">Fun Facts</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="duckhalloffame.html">Duck Hall of Fame</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="duckrecipes.html">Duck Recipes</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="cs50duck.html">CS50 Duck</a>
+      </li>
+      
+      
+    </ul>
+  </div>
+</nav>
+
+                </div>
+
+            </div>
+            <div class="row">
+              <div class="col">
+                <br>
+              </div>
+              
+            </div>
+            
+          <h2>Fun Facts: Something to Pique Your Interest</h2>
+                <hr>
+                <table>
+                    <tr>
+                        <td>
+<div class="row">
+  <div class="col" >
+    <ul class="list-group">
+  <li class="list-group-item active" aria-current="true" id="f1">Fun Fact #1</li>
+  <li class="list-group-item" id="f2">Fun Fact #2</li>
+  <li class="list-group-item" id="f3">Fun Fact #3</li>
+  <li class="list-group-item" id="f4">Fun Fact #4</li>
+  <li class="list-group-item" id="f5">Fun Fact #5</li>
+  <li class="list-group-item" id="f6">Fun Fact #6</li>
+  <li class="list-group-item" id="f7">Fun Fact #7</li>
+  <li class="list-group-item" id="f8">Fun Fact #8</li>
+  <li class="list-group-item" id="f9">Fun Fact #9</li>
+  <li class="list-group-item" id="f10">Fun Fact #10</li>
+</ul>
+  </div>
+</div>
+</td>
+<td>
+   <p>
+       <span  class="textalign" id="funfacttd">Mallards are the most common duck in the world</span>
+       <img src="mallard.png" alt="..." id="duckid">
+       </p>
+        
+</td>
+</tr>
+</table>
+
+        </div>
+
+    </body>
+</html>
